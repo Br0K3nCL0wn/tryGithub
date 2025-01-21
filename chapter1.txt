@@ -13,6 +13,8 @@ find the .git hidden file. that's the git local repository
 comm :git status
 -add files into staging area and start tracking changes in it 
 comm :git add {filename.format}
+-to add all files inside folder
+comm :git add *
 -remove files from staging area/unstaged
 comm :git rm --cached {filename.format}
 -to commit and add certain commit message
@@ -24,3 +26,12 @@ comm :git log
 comm :git config user.email "{your@email}"
 comm :git config user.name "{your name}"
 - don't include --global whatsoever cus it changes globally on your git computer
+
+- look at the different or what has been modified
+comm :git diff {filename that has been modified.format}
+
+- discard changes in working directory
+- in hyperterminal
+comm :git restore {filename that has been modified.format}
+- in cmd
+comm :git checkout {filename that has been modified.format}
