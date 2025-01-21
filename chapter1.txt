@@ -14,7 +14,7 @@ comm :git status
 -add files into staging area and start tracking changes in it 
 comm :git add {filename.format}
 -to add all files inside folder
-comm :git add *
+comm :git add * / git add . {better use .}
 -remove files from staging area/unstaged
 comm :git rm --cached {filename.format}
 -to commit and add certain commit message
