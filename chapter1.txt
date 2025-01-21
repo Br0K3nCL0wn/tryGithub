@@ -1,0 +1,19 @@
+This is the first version
+
+
++Creating git local repository
+-initialize git:
+comm :git init
+-open a hiddden files:
+comm :ls -a
+find the .git hidden file. that's the git local repository
+
++get files into staging area and commit:
+-to see the status of certain files is inside staging area
+comm :git status
+-add files into staging area and start tracking changes in it 
+comm :git add {filename.format}
+-to commit and add certain commit message
+comm :git commit -m "{the message you want {Better in present tense}}"
+-you can see what commit you've made with
+comm :git log
