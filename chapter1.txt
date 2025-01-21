@@ -13,7 +13,14 @@ find the .git hidden file. that's the git local repository
 comm :git status
 -add files into staging area and start tracking changes in it 
 comm :git add {filename.format}
+-remove files from staging area/unstaged
+comm :git rm --cached {filename.format}
 -to commit and add certain commit message
 comm :git commit -m "{the message you want {Better in present tense}}"
 -you can see what commit you've made with
 comm :git log
+
+- need author. insert your username and email in this repository only
+comm :git config user.email "{your@email}"
+comm :git config user.name "{your name}"
+- don't include --global whatsoever cus it changes globally on your git computer
