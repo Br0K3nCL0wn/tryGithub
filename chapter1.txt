@@ -21,7 +21,6 @@ comm :git rm --cached {filename.format}
 comm :git commit -m "{the message you want {Better in present tense}}"
 -you can see what commit you've made with
 comm :git log
-
 - need author. insert your username and email in this repository only
 comm :git config user.email "{your@email}"
 comm :git config user.name "{your name}"
@@ -35,3 +34,26 @@ comm :git diff {filename that has been modified.format}
 comm :git restore {filename that has been modified.format}
 - in cmd
 comm :git checkout {filename that has been modified.format}
+
++ github
+- make new remote repository
+comm :git remote add origin{you can freely specify the name but stick to origin} {URL}
+- push to the remote repository
+comm :git push origin{name local repo} master{name remote repo can be named main}
+
+- cloning
+comm :git clone {URL}
+
++ branching
+- make new branch
+comm :git branch {Name of the branch}
+- check branches that already maked
+comm :git branch
+
+- switch to another branch
+comm :git checkout {Name of the branch that already maked}
+
+- merging
+- it need to be in the branch that you want to changes (usually at master/main branch)
+comm :git merge {name of the other branch that change this branch}
+- if vim opens up, you can enter merge message or just type :q! to save and quit
